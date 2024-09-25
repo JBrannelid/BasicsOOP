@@ -5,19 +5,19 @@ This repository demonstrates the basics of Object-Oriented Programming (OOP) in 
 ## Features
 Circle Class:
 - Calculates and displays:
-- - Area
-- - - Perimeter (circumference)
-- - - Volume (of a sphere with the same radius)
-- - Triangle Class:
-- - - Calculates and displays:
-- - - Area (using Heron’s formula)
-- - - Perimeter
-- - - Volume (of a triangular prism with given height)
+  - Area
+    - Perimeter (circumference)
+    - Volume (of a sphere with the same radius)
+- Triangle Class:
+  - Calculates and displays:
+    - Area (using Heron’s formula)
+    - Perimeter
+    - Volume (of a triangular prism with given height)
 
 ## Example Output
 For a circle with radius 5 and a triangle with sides 3, 4, 5:
 
-`code`
+```console
 Area på en cirkel med en radie: 5 är: 78.54
 Omkrätsen på ett cirkel med en radie: 5 är: 31.42
 Volymen på ett klot med en radie: 5 är: 523.60
@@ -35,4 +35,4 @@ Om vi ska beräkna volymen i en prisma behöver vi veta höjden på prisman
 Ange höjden på prisman: 10
 
 Volymen av prismat är: 60.0
-```code block `
+```
