@@ -11,11 +11,11 @@ namespace BasicsOOP
     {
         static void Main(string[] args)
         {
-            // Create new instance of the class Circle and set predefinition value
+            // Instance/object of the class Circle. Pass preset values to the class constructor
             Circle circle1 = new Circle(5);
             Circle circle2 = new Circle(6);
 
-            // Call void functions inside class Circle and print out calculated area, perimeter and volume
+            // Call void functions inside class Circle and print out calculated area, circumference and volume
             circle1.ReturnArea();
             circle2.ReturnArea();
             Console.WriteLine();
@@ -27,29 +27,26 @@ namespace BasicsOOP
             circle1.ReturnVolume();
             circle2.ReturnVolume();
 
-            // Give user time to read and promt user to press a key to continued. Clear the console
-            Console.WriteLine("\nTryck på en valfri tagent för att fortsätta");
-            Console.ReadKey();
-            Console.Clear();
+            // Give user time to read. Promt user to press a key to continued. Clear the console
+            promtUserMessage();
 
-            // Call functions and save 3 integer in an arrey
-            Message();
-            int[] sides = inputTriangle();
+            // Call local functions and save 3 integers in an array responsible for storing a triangle with 3 sides
+            Console.WriteLine("För att räkna ut Area och Omkräts på en rätvinklig triangel \n" +
+                              "behöver vi veta längden på triangels 3 sidor (Sida: A, B, C)\n");
+            int[] sides = InputTriangle();
 
-            // Create new instance of the class Triangle. Arguments (Arrey index) send to the class Triangle constructor
+            // A new triangle object. The Triangle constructor class receives the arguments in the parameter (Arrey index)
             Triangle triangle = new Triangle(sides[0], sides[1], sides[2]);
 
-            // Call void functions inside class Triangle. Print out calculated area and perimeter
+            // Print out calculated area and circumference by calling void functions from the object to local functions inside the class triangle 
             triangle.ReturnArea();
             triangle.ReturnPerimeter();
 
-            // Give user time to read and promt user to press a key to continued. Clear the console
-            Console.WriteLine("Tryck på en valfri tagent för att fortsätta");
-            Console.ReadKey();
-            Console.Clear();
+            // Give user time to read. Promt user to press a key to continued. Clear the console
+            promtUserMessage();
 
-            // Promt input for triangle height and pass the height to calculate volum function inside triangle Class
-            Console.WriteLine("Om vi ska beräkna volymen i en prisma behöver vi veta höjden på prisman");
+            // Prompt input for triangle height and pass it to the class triangle functions responsible for calculating volume of a prisma
+            Console.WriteLine("För att beräkna volymen i en prisma behöver vi ta reda höjden");
             Console.Write("Ange höjden på prisman: ");
 
             int height = ReadInt();
@@ -57,7 +54,7 @@ namespace BasicsOOP
             triangle.ReturnVolume(height); 
         }
         static int ReadInt()
-        {   // TryParse for safe convert string to an integer. Promt user if an integer wasn't entered
+        {   // TryParse for safe convert string to an integer. Prompt user if an integer wasn't entered
             while (true)
             {
                 if (int.TryParse(Console.ReadLine(), out int input))
@@ -70,21 +67,23 @@ namespace BasicsOOP
                 }
             }
         }
-        static int[] inputTriangle()
-        {   // Initialisation an Array with 3 index and fill upp the Arrey with a foor-loop. 
+        static int[] InputTriangle()
+        {   // Initialize an array with 3 indexes and fill it up with a for-loop. Responsible for carrying a triangle with three sides of value
+
             int[] sideTriangel = new int[3];
 
             for (int i = 0; i < sideTriangel.Length; i++)
             {
                 Console.Write($"Ange längden på sida {i + 1}: ");
-                sideTriangel[i] = ReadInt(); // Check if input is valid by calling a ReadInteget functions  
+                sideTriangel[i] = ReadInt(); // Check if user input is valid by calling a ReadInteger functions  
             }
             return sideTriangel;
         }
-        static void Message()
+        static void promtUserMessage()
         {
-            Console.WriteLine("För att räkna ut Area och Omkräts på en rätvinkligt triangel \n" +
-                              "behöver vi veta längden på dess 3 sidor\n");
+            Console.WriteLine("Tryck på en valfri tangent för att fortsätta");
+            Console.ReadKey();
+            Console.Clear();
         }
     }
 }

@@ -8,35 +8,35 @@ namespace BasicsOOP
 {
     public class Circle
     {
-        // Fields with attributes 
+        // Private fields
         private int _radie; // _radie is readable inside the class Circle 
 
-        // Constructor
+        // Constructor (a-stands for argument). Place a value on a circle radie
         public Circle(int aRadie)
         {
             _radie = aRadie; // Set a value to _radie
         }
 
-        // Void functions 
+        // 3 methods that will return Area, circumference and Volume when called on from the Main Class
         public void ReturnArea()
         {
             Console.WriteLine($"Area på en cirkel med en radie: {_radie} är: {GetArea()}");
         }
         public void ReturnPerimeter()
         {
-            Console.WriteLine($"Omkrätsen på ett cirkel med en radie: {_radie} är: {GetPerimeter()}");
+            Console.WriteLine($"Omkrätsen på ett cirkel med en radie: {_radie} är: {GetCircumference()}");
         }
         public void ReturnVolume()
         {
             Console.WriteLine($"Volymen på ett klot med en radie: {_radie} är: {GetVolume()}");
         }
 
-        // Calculate functions that will return a double value
+        // Three methods for calculate Area, circumference and Volume. Convert from a integer to a double
         public double GetArea()
         {
             return (_radie * _radie) * Math.PI; // A = r * r * π
         }
-        public double GetPerimeter()
+        public double GetCircumference()
         {
             return 2 * Math.PI * _radie; // P = 2 * π * r
         }
