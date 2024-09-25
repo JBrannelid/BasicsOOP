@@ -36,3 +36,17 @@ Ange höjden på prisman: 10
 
 Volymen av prismat är: 60.0
 ```
+
+## How to Use
+Clone the repository:
+- git clone [GitHub] (https://github.com/JBrannelid/BasicsOOP.git/)
+- Open the project in Visual Studio or any other C# IDE.
+- Run the program. It will prompt you to:
+  - Input values for Circle and Triangle dimensions.
+  - Calculate and display area, perimeter, and volume for both figures.
+  - Press any key when prompted to clear the console and proceed with the next set of calculations.
+
+## Requirements
+.NET Core SDK or .NET Framework
+C# 8.0 or higher
+
