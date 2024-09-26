@@ -8,9 +8,10 @@ Circle Class:
   - Area
   - Circumference)
   - Volume (of a sphere with the same radius)
+
 Triangle Class:
  - Calculates and displays:
-   - Area (using Heron’s formula)
+   - Area (using Heronâ€™s formula)
    - Perimeter
    - Volume (of a triangular prism with given height)
 
@@ -18,22 +19,22 @@ Triangle Class:
 For a circle with radius 5 and a triangle with sides 3, 4, 5:
 
 ```console
-Area på en cirkel med en radie: 5 är: 78.539
-Omkrätsen på ett cirkel med en radie: 5 är: 31.415
-Volymen på ett klot med en radie: 5 är: 523.598
+Area pÃ¥ en cirkel med en radie: 5 Ã¤r: 78.539
+OmkrÃ¤tsen pÃ¥ ett cirkel med en radie: 5 Ã¤r: 31.415
+Volymen pÃ¥ ett klot med en radie: 5 Ã¤r: 523.598
 
-Area på en cirkel med en radie: 6 är: 113.097
-Omkrätsen på ett cirkel med en radie: 6 är: 37.699
-Volymen på ett klot med en radie: 6 är: 904.778
+Area pÃ¥ en cirkel med en radie: 6 Ã¤r: 113.097
+OmkrÃ¤tsen pÃ¥ ett cirkel med en radie: 6 Ã¤r: 37.699
+Volymen pÃ¥ ett klot med en radie: 6 Ã¤r: 904.778
 
-Tryck på en valfri tangent för att fortsätta
+Tryck pÃ¥ en valfri tangent fÃ¶r att fortsÃ¤tta
 ...
-Arean av triangeln är: 6
-Omkretsen av triangeln är: 12
+Arean av triangeln Ã¤r: 6
+Omkretsen av triangeln Ã¤r: 12
 
 ...
-För att beräkna volymen i en prisma behöver vi ta reda höjden
-Ange höjden på prisman: 6
+FÃ¶r att berÃ¤kna volymen i en prisma behÃ¶ver vi ta reda hÃ¶jden
+Ange hÃ¶jden pÃ¥ prisman: 6
 
-Volymen av prismat är: 60.0
+Volymen av prismat Ã¤r: 60.0
 ```
