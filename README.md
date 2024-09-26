@@ -36,5 +36,5 @@ Omkretsen av triangeln är: 12
 För att beräkna volymen i en prisma behöver vi ta reda höjden
 Ange höjden på prisman: 6
 
-Volymen av prismat är: 60.0
+Volymen av prismat är: 36
 ```
