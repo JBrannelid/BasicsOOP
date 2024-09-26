@@ -9,12 +9,12 @@ namespace BasicsOOP
     public class Circle
     {
         // Private fields
-        private int _radie; // _radie is readable inside the class Circle 
+        private int _radie; 
 
         // Constructor (a-stands for argument). Place a value on a circle radie
         public Circle(int aRadie)
         {
-            _radie = aRadie; // Set a value to _radie
+            _radie = aRadie;
         }
 
         // Call calculate methods. Usage of Microsoft static functions Math.Round. Round the value to 2 decimal

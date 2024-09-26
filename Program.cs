@@ -54,18 +54,39 @@ namespace BasicsOOP
 
             triangle.ReturnVolume(height); 
         }
+        
         static int ReadInt()
-        {   // TryParse for safe convert string to an integer. Prompt user if an integer wasn't entered
+        {  
             while (true)
-            {
-                if (int.TryParse(Console.ReadLine(), out int input))
+            { // TryParse for safe convert string to an integer with an if-statment. Prompt user if an integer or negativ number wasn't entered
+                if (TryParse(Console.ReadLine(), out int result))
                 {
-                    return input;
+                    if (result > 0)
+                    {
+                        return result;
+                    }
+                    Console.Write($"\nSidan kan inte vara negativ: ");
                 }
                 else
                 {
                     Console.Write($"\nVänligen skriv in ett heltal: ");
                 }
+            }
+        }
+       
+        static bool TryParse(string input, out int result)
+        {    // Custom TryPars functions. Convert value and turn back sucessfull, yes/no
+            result = -1; // assign out result
+
+            try
+            {
+                result = Convert.ToInt32(input);
+                return true;
+            }
+            catch (Exception) // Return true or false value hense why an exception specification isn't nessesary 
+            {
+
+                return false;
             }
         }
         static int[] InputTriangle()
