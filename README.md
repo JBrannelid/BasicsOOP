@@ -6,13 +6,13 @@ This repository demonstrates the basics of Object-Oriented Programming (OOP) in 
 Circle Class:
 - Calculates and displays:
   - Area
-  - Circumference)
+  - Circumference
   - Volume (of a sphere with the same radius)
 
 Triangle Class:
  - Calculates and displays:
    - Area (using Heron’s formula)
-   - Perimeter
+   - Circumference
    - Volume (of a triangular prism with given height)
 
 ## Example Output
@@ -31,10 +31,18 @@ Tryck på en valfri tangent för att fortsätta
 ...
 Arean av triangeln är: 6
 Omkretsen av triangeln är: 12
-
-...
-För att beräkna volymen i en prisma behöver vi ta reda höjden
-Ange höjden på prisman: 6
-
-Volymen av prismat är: 36
 ```
+
+## How to Use
+Clone the repository:
+- git clone [GitHub] (https://github.com/JBrannelid/BasicsOOP.git/)
+- Open the project in Visual Studio or any other C# IDE.
+- Run the program. It will prompt you to:
+  - Input values a Triangle dimensions
+  - Calculate and display area, Circumference, and volume for both figures.
+  - Press any key when prompted to clear the console and proceed with the next set of calculations.
+
+## Requirements
+.NET Core SDK or .NET Framework
+C# 8.0 or higher
+
