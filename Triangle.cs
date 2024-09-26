@@ -19,20 +19,22 @@ namespace BasicsOOP
             _sideB = aSideB;
             _sideC = aSideC;
         }
-        // 3 methods that will return Area, circumference and Volume when called on from the Main Class
+        // Call calculate methods. Usage of Microsoft static functions Math.Round. Round the value to 2 decimal
         public void ReturnArea()
         {
-            Console.WriteLine($"\nArean av triangeln är: {GetArea()}");
+            Console.WriteLine($"\nArean av triangeln är: {Math.Round(GetArea(), 2)}");
         }
         public void ReturnPerimeter()
         {
-            Console.WriteLine($"Omkretsen av triangeln är: {GetCircumference()}\n");
+            Console.WriteLine($"Omkretsen av triangeln är: {Math.Round(GetCircumference(), 2)}\n");
         }
         public void ReturnVolume(int height)
         {
-            Console.WriteLine($"\nVolymen av prisman är: {GetVolume(height)}");
+            Console.WriteLine($"\nVolymen av prisman är: {Math.Round(GetVolume(height), 2)}");
         }
-        // Three methods for calculate Area, circumference and Volume. Convert from a integer to a double
+
+        // Calculate methods and convert integer variable to double.
+        // Use Microsoft static functions for value of PI and power of x
         public double GetArea()
         {
             // Heron's formula for area calculation

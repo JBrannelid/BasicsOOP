@@ -26,6 +26,7 @@ namespace BasicsOOP
 
             circle1.ReturnVolume();
             circle2.ReturnVolume();
+            Console.WriteLine();
 
             // Give user time to read. Promt user to press a key to continued. Clear the console
             promtUserMessage();

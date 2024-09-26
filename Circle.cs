@@ -17,21 +17,22 @@ namespace BasicsOOP
             _radie = aRadie; // Set a value to _radie
         }
 
-        // 3 methods that will return Area, circumference and Volume when called on from the Main Class
+        // Call calculate methods. Usage of Microsoft static functions Math.Round. Round the value to 2 decimal
         public void ReturnArea()
         {
-            Console.WriteLine($"Area på en cirkel med en radie: {_radie} är: {GetArea()}");
+            Console.WriteLine($"Area på en cirkel med en radie: {_radie} är: {Math.Round(GetArea(),2)}");
         }
         public void ReturnPerimeter()
         {
-            Console.WriteLine($"Omkrätsen på ett cirkel med en radie: {_radie} är: {GetCircumference()}");
+            Console.WriteLine($"Omkrätsen på ett cirkel med en radie: {_radie} är: {Math.Round(GetCircumference(),2)}");
         }
         public void ReturnVolume()
         {
-            Console.WriteLine($"Volymen på ett klot med en radie: {_radie} är: {GetVolume()}");
+            Console.WriteLine($"Volymen på ett klot med en radie: {_radie} är: {Math.Round(GetVolume(),2)}");
         }
 
-        // Three methods for calculate Area, circumference and Volume. Convert from a integer to a double
+        // Calculate methods and convert integer variable to double.
+        // Use Microsoft static functions for value of PI and power of x
         public double GetArea()
         {
             return (_radie * _radie) * Math.PI; // A = r * r * π

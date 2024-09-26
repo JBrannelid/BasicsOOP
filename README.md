@@ -19,18 +19,24 @@ Triangle Class:
 For a circle with radius 5 and a triangle with sides 3, 4, 5:
 
 ```console
-Area på en cirkel med en radie: 5 är: 78.539
-Omkrätsen på ett cirkel med en radie: 5 är: 31.415
-Volymen på ett klot med en radie: 5 är: 523.598
+Area på en cirkel med en radie: 5 är: 78,54
+Area på en cirkel med en radie: 6 är: 113,1
 
-Area på en cirkel med en radie: 6 är: 113.097
-Omkrätsen på ett cirkel med en radie: 6 är: 37.699
-Volymen på ett klot med en radie: 6 är: 904.778
+Omkrätsen på ett cirkel med en radie: 5 är: 31,42
+Omkrätsen på ett cirkel med en radie: 6 är: 37,7
+
+Volymen på ett klot med en radie: 5 är: 523,6
+Volymen på ett klot med en radie: 6 är: 904,78
 
 Tryck på en valfri tangent för att fortsätta
 ...
 Arean av triangeln är: 6
 Omkretsen av triangeln är: 12
+...
+För att beräkna volymen i en prisma behöver vi ta reda höjden
+Ange höjden på prisman: 6
+
+Volymen av prisman är: 36
 ```
 
 ## How to Use
