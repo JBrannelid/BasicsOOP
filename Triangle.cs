@@ -34,7 +34,7 @@ namespace BasicsOOP
         }
 
         // Calculate methods and convert integer variable to double.
-        // Use Microsoft static functions for value of PI and power of x
+        // Use Microsoft static functions for Square root (Math.sqrt())
         public double GetArea()
         {
             // Heron's formula for area calculation
