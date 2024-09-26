@@ -1,4 +1,4 @@
-# README File**
+# README File
 ## BasicsOOP - Simple OOP in C#
 This repository demonstrates the basics of Object-Oriented Programming (OOP) in C#. It includes examples of working with classes, constructors, methods, and calculations of geometric figures such as Circles and Triangles.
 
